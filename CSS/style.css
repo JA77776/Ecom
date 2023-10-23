@@ -1,0 +1,55 @@
+*,
+*::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: rgb(238, 0, 0);
+    --secondary: rgba(7, 126, 176, 0.597);
+    --awesome: hsla(135, 100%, 50%, 0.7);
+}
+.J{
+    width: 100%;
+}
+#onlineshop{
+    text-align: center;
+}
+.hero.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    align-content: center;
+
+}
+
+img[alt="animation"]{
+    width: 5rem;
+    aspect-ratio: 1/1;
+    animation: animateshoes 10s infinite;
+    transition: all .7s;
+    
+}
+@keyframes animateshoes {
+    to {
+        transform: translateX(0px);
+    }
+
+    from{
+        transform: translateX(calc(150vw - 50vw)) scale(1, 1);
+         }
+}
+    
+
+
